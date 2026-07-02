@@ -1,0 +1,37 @@
+# Normalize line endings on commit; check out with platform-appropriate endings.
+* text=auto
+
+# Shell / server / web code — must stay LF (CRLF breaks bash/python on Linux)
+*.sh   text eol=lf
+*.py   text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.sql  text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Windows scripts — CRLF
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Binary assets — never touch (certs, executables, archives, images)
+*.cer  binary
+*.crt  binary
+*.der  binary
+*.p12  binary
+*.pfx  binary
+*.exe  binary
+*.dll  binary
+*.7z   binary
+*.zip  binary
+*.tar  binary
+*.gz   binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary

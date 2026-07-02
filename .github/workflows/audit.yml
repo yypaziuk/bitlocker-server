@@ -1,0 +1,13 @@
+name: audit
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Public-repo compliance audit
+        run: bash tools/audit-public-repo.sh

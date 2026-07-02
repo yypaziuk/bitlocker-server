@@ -1,0 +1,27 @@
+# === Secrets / local config — NEVER commit (this is a PUBLIC repo) ===
+.env
+*.env
+# real values live here; commit escrow.config.example.ps1 instead
+client/escrow.config.ps1
+bl-escrow
+bl-escrow.pub
+*.pem
+*.key
+*.agekey
+id_rsa*
+
+# Internal documentation (not for public repo)
+CLAUDE.md
+
+# Build artifacts
+*.exe
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
